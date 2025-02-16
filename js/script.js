@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem("theme", newTheme);
         applyTheme(newTheme);
     });
-
     function applyTheme(theme) {
         document.boffdy.classList.toggle("dark-theme", theme === "dark");
         document.body.classList.toggle("light-theme", theme === "light");

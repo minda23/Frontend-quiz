@@ -13,7 +13,7 @@ body {
     background-position: center bottom;
     background-size: cover;
     box-sizing: border-box;
-    ccc overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 .light-theme body {
