@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Frontend quiz app</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="light-switch">
+      <div class="light-icons">
+        <img id="sun-light" src="assets/images/icon-sun-light.svg" alt="Sun Light">
+        <img id="sun-dark" class="hidden" src="assets/images/icon-sun-dark.svg" alt="Sun Dark">
+      </div>
+
+      <div id="toggle-switch" class="toggle-switch">
+        <input type="checkbox" id="switcher" class="toggle-input">
+        <label for="switcher" class="toggle-label"></label>
+      </div>
+
+      <div class="dark-icons">
+        <img id="moon-light" class="hidden" src="assets/images/icon-moon-light.svg" alt="Moon Light">
+        <img id="moon-dark" src="assets/images/icon-moon-dark.svg" alt="Moon Dark">
+      </div>
+    </div>
+    <div class="change_background" id="background"></div>
+
+
+    <div class="quiz-section" id="content">
+      <div class="main-heading">
+        <h1> Welcome to the <br><span> Frontend Quiz!</span></h1>
+        <p class="text-quiz">Pick a subject to get started.</p>
+      </div>
+      <div class="quiz-options">
+        <div class="quiz-option" id="quiz-option1">
+          <img src="assets/images/icon-html.svg" alt="">
+          <span>HTML</span>
+        </div>
+        <div class="quiz-option" id="quiz-option2">
+          <img src="assets/images/icon-css.svg" alt="">
+          <span>CSS</span>
+        </div>
+        <div class="quiz-option" id="quiz-option3">
+          <img src="assets/images/icon-js.svg" alt="">
+          <span>JavaScript</span>
+        </div>
+        <div class="quiz-option" id="quiz-option4">
+          <img src="assets/images/icon-accessibility.svg" alt="">
+          <span>Accessibility</span>
+
+        </div>
+        <div>
+          <button class="sbn-btn">Submit</button>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+    <div id="question_count"></div> <!-- This is where the span will be appended -->
+
+    <div id="progress_container" class="prog_kon">
+      <div class="kontajner">
+        <div id="progress_bar" style="height: 10px; background-color: #4caf50;margin-top: -10rem;">
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

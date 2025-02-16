@@ -1,0 +1,11 @@
+{
+  "name": "frontend_quiz",
+  "version": "1.0.0",
+  "description": "package.json",
+  "main": "index.js",
+  "scripts": {
+    "test": "ffff"
+  },
+  "author": "",
+  "license": "ISC"
+}

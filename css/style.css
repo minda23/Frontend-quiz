@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    line-height: 1.5;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    background-color: #313E51;
+    background-image: url('../assets/images/pattern-background-desktop-dark.svg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    box-sizing: border-box;
+    ccc overflow-x: hidden;
+}
+
+.light-theme body {
+    background-color: white;
+}
+
+/* Default light theme */
+.change_background {
+    background-image: url('../assets/images/pattern-background-desktop-light.svg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    background-color: white;
+    transition: background 0.3s ease;
+}
+
+.light-theme .change_background {
+    background-image: url('../assets/images/pattern-background-desktop-dark.svg');
+    background-color: #333;
+}
+
+/* Hidden class for icons */
+.hidden {
+    display: none;
+}
+
+/* Basic styling for switch */
+.toggle-switch {
+    display: inline-block;
+}
+
+.toggle-input {
+    display: none;
+    /* Hide the checkbox */
+}
+
+.toggle-label {
+    display: block;
+    width: 50px;
+    height: 25px;
+    background-color: #ddd;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-label::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    top: 2.5px;
+    left: 2.5px;
+    transition: transform 0.3s ease;
+}
+
+/* When the checkbox is checked, move the circle to the right */
+.toggle-input:checked+.toggle-label::before {
+    transform: translateX(25px);
+    /* Adjust based on the width of the switch */
+}
+
+
+.quiz-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.active {
+    background-color: #A729F5;
+}
+
+
+
+.main-heading h1 {
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+
+}
+
+.main-heading {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.text-quiz {
+    color: #6F6C7F;
+    font-style: italic;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    align-self: center;
+}
+
+.quiz-options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    flex: 2;
+    margin-right: 2rem;
+
+
+}
+
+.quiz-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3B4D66;
+    padding: 15px;
+    border-radius: 1.5rem;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.data-answer {
+    display: flex;
+    align-items: center;
+    padding: 1.3rem;
+    margin-top: -13rem;
+    margin: 1rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #3B4D66;
+    border-radius: 1.5rem;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+
+}
+
+
+
+.quiz-option:hover {
+    background-color: #A729F5;
+}
+
+
+.quiz-section h1,
+.quiz-section span {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+
+.light-theme .quiz-section h1,
+.light-theme .quiz-section span {
+    color: #313E51;
+
+}
+
+
+.dark-theme .quiz-section h1,
+.dark-theme .quiz-section span {
+    color: #FFFFFF;
+
+}
+
+.dark-theme .quiz-option {
+    background-color: #333;
+    color: orange;
+}
+
+
+.light-theme .quiz-option {
+    background-color: lightgrey;
+    color: #313E51;
+}
+
+
+.quiz-option img {
+    margin-right: 1rem;
+    width: 30px;
+    height: 30px;
+}
+
+.quiz-option span {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    flex: 1;
+    text-align: center;
+}
+
+.light-switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+
+.light-icons img,
+.dark-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Basic toggle switch styling */
+.toggle-switch {
+    display: inline-block;
+}
+
+.kontajner {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#progress_container {
+    display: none;
+    margin-top: 4rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+    color: black;
+    margin-top: 0rem;
+}
+
+.sbn-btn {
+    background-color: #A729F5;
+    color: #FFFFFF;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    width: 100%;
+
+}
+
+#question_count {
+    margin-top: -5rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.toggle-input {
+    display: none;
+    /* Hide the checkbox */
+}
+
+/* Style the label (the switch) */
+.toggle-label {
+    display: block;
+    width: 50px;
+    height: 25px;
+    background-color: #ddd;
+    /* Light background */
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Create the circle inside the switch */
+.toggle-label::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    top: 2.5px;
+    left: 2.5px;
+    transition: transform 0.3s ease;
+}
+
+/* When the checkbox is checked, change the background and move the circle */
+.toggle-input:checked+.toggle-label {
+    background-color: #4caf50;
+    /* Dark background */
+}
+
+.toggle-input:checked+.toggle-label::before {
+    transform: translateX(25px);
+
+}
+
+.checked {
+    position: absolute;
+    bottom: 15rem;
+}
+
+
+/* Media Query for Small Screens */
+@media only screen and (max-width: 600px) {
+    .quiz-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 1rem;
+        margin-top: 3rem;
+    }
+
+    .sbn-btn {
+        margin: 1rem auto;
+        font-size: 1.2rem;
+    }
+
+    #progress_container {
+        margin-top: 11rem;
+        margin-bottom: 2rem;
+    }
+
+    ul {
+        margin-bottom: 4.5rem;
+    }
+
+    body {
+        background-size: 120%;
+        /* Adjust background size for smaller screens */
+    }
+
+    .quiz-section {
+        padding: 1rem;
+    }
+
+    .main-heading {
+        margin-top: 5rem;
+    }
+
+    .main-heading h1 {
+        font-size: 2rem;
+        /* Adjust heading size */
+    }
+
+    .text-quiz {
+        font-size: 1rem;
+        /* Adjust font size */
+        margin-bottom: 1.5rem;
+    }
+
+    .quiz-options {
+        gap: 1rem;
+        max-width: 100%;
+    }
+
+    .quiz-option {
+        padding: 12px;
+    }
+
+    .quiz-option span {
+        font-size: 1rem;
+        /* Adjust font size */
+    }
+
+    .light-switch {
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .toggle-switch {
+        width: 50px;
+        height: 25px;
+    }
+
+    .toggle-label::before {
+        width: 20px;
+        height: 20px;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    .toggle-input:checked+.toggle-label::before {
+        transform: translateX(25px);
+        /* Adjust circle position when checked */
+    }
+}
