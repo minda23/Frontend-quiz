@@ -317,6 +317,10 @@ h2 {
 
 /* Media Query for Small Screens */
 @media only screen and (max-width: 600px) {
+    .quiz-options {
+        margin-right: 0rem;
+    }
+
     .quiz-section {
         display: flex;
         flex-direction: column;
