@@ -124,7 +124,6 @@ body {
     flex-direction: column;
     gap: 1.5rem;
     flex: 2;
-    margin-right: 2rem;
 
 
 }
@@ -138,6 +137,7 @@ body {
     border-radius: 1.5rem;
     transition: background-color 0.3s ease;
     cursor: pointer;
+    margin-right: 5rem;
 }
 
 .data-answer {
@@ -317,10 +317,6 @@ h2 {
 
 /* Media Query for Small Screens */
 @media only screen and (max-width: 600px) {
-    .quiz-options {
-        margin-right: 0rem;
-    }
-
     .quiz-section {
         display: flex;
         flex-direction: column;
@@ -330,6 +326,11 @@ h2 {
         padding: 1rem;
         margin-top: 3rem;
     }
+
+    .quiz-option {
+        margin-right: 0rem;
+    }
+
 
     .sbn-btn {
         margin: 1rem auto;
